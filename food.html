@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Savor the Flavors of Japan</title>
+  <link type="text/css" rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <script>
+    function toggleText(id, button) {
+      var element = document.getElementById(id);
+      if (element.style.display === "none" || element.style.display === "") {
+        element.style.display = "block";
+        button.innerHTML = "Hide the Secrets";
+      } else {
+        element.style.display = "none";
+        button.innerHTML = "Unlock the Secrets";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nature.html">Attractions</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li>Food</li>
+
+
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Uncover the Taste of Japan</h1>
+    <p>Dive into Japan's cuisine, where every dish is a masterpiece of tradition, artistry, and taste. </p>
+
+    <h2>Sushi - A Symphony of Freshness </h2>
+    <img src="sushi.jpeg" alt="Sushi" />
+    <button onclick="toggleText('sushiText', this)" class='toggle-btn'>Unlock the Secrets</button>
+    <div id="sushiText" class="hidden-text" style="display: none;">
+      <p>Sushi is more than just raw fish; it’s an art form. Combining the freshest seafood, perfectly seasoned rice,
+        and a touch of wasabi, sushi captures the essence of Japan’s culinary precision and respect for natural flavors.
+        Visit any sushi bar, and you’ll taste the ocean in every bite.</p>
+    </div>
+
+
+    <h2>Ramen - The Soul of Japanese Comfort Food</h2>
+    <img src="ramen.jpg" alt="Ramen" />
+    <button onclick="toggleText('ramenText', this)" class="toggle-btn">Unlock the Secrets</button>
+    <div id="ramenText" class="hidden-text" style="display: none;">
+      <p>A steaming bowl of ramen is a comforting hug in culinary form. Whether it’s the rich pork-based broth of
+        Tonkotsu or the light soy-based Shoyu, every region in Japan offers its own unique spin on this beloved dish.
+        Topped with tender slices of pork, a soft-boiled egg, and fresh greens, ramen is a must-try.</p>
+    </div>
+
+
+    <h2>Tempura - Crispy Perfection </h2>
+    <img src="tempura.jpg" alt="Tempura" />
+    <button onclick="toggleText('tempuraText', this)" class="toggle-btn">Unlock the Secrets</button>
+    <div id="tempuraText" class="hidden-text" style="display: none;">
+      <p>Light, crispy, and golden, tempura showcases the art of frying at its finest. Delicate pieces of shrimp, fish,
+        and vegetables are coated in a whisper-thin batter and fried to perfection. Served with a dipping sauce, tempura
+        is a masterpiece of texture and flavor.</p>
+    </div>
+
+    <h2>Matcha - The Essence of Japanese Tea Culture </h2>
+    <img src="matcha.png" alt="Matcha " />
+    <button onclick="toggleText('matchaText', this)" class="toggle-btn">Unlock the Secrets</button>
+    <div id="matchaText" class="hidden-text" style="display: none;">
+      <p>This finely ground green tea powder isn’t just a drink—it’s an experience. From traditional tea ceremonies to
+        modern matcha lattes and desserts, the earthy, slightly sweet flavor of matcha is deeply rooted in Japanese
+        culture. Sipping a cup connects you to centuries of tradition.</p>
+    </div>
+
+    <h2>Okonomiyaki - Japan's Savory Pancake </h2>
+    <img src="okonomiyaki.jpg" alt="Okonomiyaki" />
+    <button onclick="toggleText('okonomiyakiText', this)" class="toggle-btn">Unlock the Secrets</button>
+    <div id="okonomiyakiText" class="hidden-text" style="display: none;">
+      <p>Often called “Japanese pizza,” okonomiyaki is a savory pancake filled with ingredients like cabbage, pork,
+        seafood, and cheese. Topped with a drizzle of mayonnaise, okonomiyaki sauce, and a sprinkle of bonito flakes,
+        this dish is a crowd-pleaser you’ll never forget.</p>
+    </div>
+
+
+  </main>
+  <footer>
+
+  </footer>
+
+</body>
+
+</html>

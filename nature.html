@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Attractions</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <meta charset="utf-8"/>
+    <script>
+      function toggleParagraph(id) {
+        var paragraph = document.getElementById(id);
+        if (paragraph.style.display === "none" || paragraph.style.display === "") {
+          paragraph.style.display = "block"; 
+        } else {
+          paragraph.style.display = "none"; 
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li>Attractions</li>
+    <li><a href="culture.html">Culture</a></li>
+    <li><a href="food.html">Food </a></li>
+</ul>
+</nav>
+    </header>
+    <main>
+      <h1>Discover Japan's Enchanting Destinations</h1>
+      <h4>Tap the Images to Unlock the Story!</h4>
+      <h2>Mount Fuji</h2>
+      <img src="mount-fuji.jpg" alt="Mount Fuji" class="image-animation" onclick="toggleParagraph('fujiText')">
+    <p id="fujiText" class="hidden-text">Standing tall and serene, Mount Fuji is timeless symbol of Japan's natural beauty and cultural significance. As the sun rises, its snow-capped peak glows with a fiery brilliance, offering a once-in-a-lifetime experience for those who seek its splendor. A visit here isn't just a trip it's a pilgrimage. </p>
+     
+      
+
+    <h2>Cherry Blossoms (Sakura)</h2>
+      <img src="cherry-blossom.jpg" alt="Cherry Blossoms" class="image-animation" onclick="toggleParagraph('sakuraText')">
+    <p id="sakuraText" class="hidden-text">Each spring, Japan transforms into a canvas painted with delicate pink and white hues as cherry blossoms bloom. From Tokyo's Ueno Park to Kyoto's Philosopher's Path, these fleeting flowers embody the beauty of life's impermanence. Join locals in the timeless tradition of *hanami* a celebration of spring's breathtaking arrival. </p>
+
+
+    <h2>Himeji Castle </h2>
+       <img src="himeji-castle.jpg" alt="Himeji Castle" class="image-animation" onclick="toggleParagraph('himejiText')">
+    <p id="himejiText" class="hidden-text">Perched on a hilltop, Himeji Castle's white walls gleam like the wings of a heron in flight. A symbol of elegance and strength, this UNESCO World Heritage site tells stories of samurai, resilience, and architectural genius. It's a window into Japan's storied past.</p>
+
+      <h2>Itsukushima Shrine </h2>
+      <img src="itsukushima-shrine.jpg" alt="Itsukushima Shrine" class="image-animation" onclick="toggleParagraph('itsukushimaText')">
+      <p id="itsukushimaText" class="hidden-text">On Miyajima Island, the red torii gate of Itsukushima Shrine seems to float gracefully upon the sea during high tide. This sacred site, blending natural beauty and spiritual reverence, offers a tranquil escape. Watching the gate at sunset feels like witnessing a dream come to life. </p>
+
+      <h2>Arashiyama Bamboo Grove</h2>
+      <img src="arashiyama-bamboo.jpg" alt="Arashiyama Bamboo Grove" class="image-animation" onclick="toggleParagraph('arashiyamaText')">
+      <p id="arashiyamaText" class="hidden-text">In Kyoto, a mystical path weaves through the towering stalks of Arashiyama Bamboo Grove. The light dances between the leaves, creating an otherworldly ambiance that feels like stepping into nature’s cathedral. Every rustle of the bamboo invites you to breathe, reflect, and embrace serenity.</p>
+    </main>
+    <footer>
+      <a class="link" href='https://www.japan-guide.com/e/e2122.html'>
+      <p>Come and explore Japan’s stunning nature – it's a place 
+      unlike any other!</p></a>
+    </footer>
+    
+  </body>
+</html>
+

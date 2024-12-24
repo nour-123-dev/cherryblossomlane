@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Japan</title>
+  <link type="text/css" rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width= device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="preloader"></div>
+  <header>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li><a href="nature.html">Attractions</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="food.html">Food </a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <h1 id="hoverText">Explore the Land of the Rising Sun!</h1>
+    <script>
+      const hoverText = document.getElementById("hoverText");
+
+      hoverText.addEventListener("mouseover", function () {
+        hoverText.style.color = "red";
+      });
+
+      hoverText.addEventListener("mouseout", function () {
+        hoverText.style.color = "#CD5C5C";
+      });
+    </script>
+    <div class="image-container">
+      <img id="zoom-image" src="japan.jpeg" alt="Japan Landscape" />
+    </div>
+    <script>
+      const image = document.getElementById('zoom-image');
+      image.addEventListener('mouseover', () => {
+        image.style.transform = 'skewX(20deg)';
+        image.style.transition = 'transform 0.3s ease';
+      });
+
+
+      image.addEventListener('mouseout', () => {
+        image.style.transform = 'skewX(0deg)';
+      });
+    </script>
+    <p>
+      <strong> Welcome to Japan, where ancient traditions meet futuristic innovation. Journey through a nation of
+        breathtaking landscapes, vibrant cities, and a culture unlike any other. From the serene beauty of Mount Fuji to
+        the bustling cities of Tokyo, Japan offers endless wonders waiting to be discovered.
+      </strong>
+    </p>
+    <p class="style"><a id="style" href="https://en.wikipedia.org/wiki/Japan" target="_blank">Click here</a> <strong>to
+        read more about
+        Japan!</strong></p>
+
+    <h2>Discover the Wonders of Japan</h2>
+
+    <div class="video-container">
+      <iframe class="video" width="500" height="315" src="https://www.youtube.com/embed/gqYzEv_AqYM?si=THn6ecRbN8jqSf01"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <h2>Where is Japan?</h2>
+
+    <p><em>Japan is an island nation located in East Asia, situated in the Pacific Ocean, east of Korean Peninsula and
+        China.</em></p>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3251815.4866437805!2d136.34775073691935!3d36.46261679159231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2sJapan!5e0!3m2!1sen!2slb!4v1731010852936!5m2!1sen!2slb"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </main>
+  <p>Top Destinations in Japan:</p>
+  <div>
+    <ul>
+      <li>Mount Fuji</li>
+      <li>Kyoto's Temples</li>
+      <li>Okinawa Beaches</li>
+      <li>Tokyo Skytree</li>
+    </ul>
+  </div>
+  <p>Famous Japanese Foods:</p>
+  <div id="align">
+    <ol>
+      <li>Sushi</li>
+      <li>Ramen</li>
+      <li>Tempura</li>
+      <li>Matcha </li>
+    </ol>
+  </div>
+  <h3>Japanese Flag:</h3>
+
+
+  <div id="flag"></div>
+  <div class="button">
+  <button id="myBtn">Show Japan's Date</button>
+  </div>
+
+  <p id="demo"></p>
+
+  <script>
+    document.getElementById("myBtn").addEventListener("click", displayDate);
+
+    function displayDate() {
+      const japanTime = new Date().toLocaleString("ja-JP", {timeZone: "Asia/Tokyo"});
+      document.getElementById("demo").innerHTML = "The current date and time in Japan is: " + japanTime;
+    }
+  </script>
+  <script>
+     var loader = document.getElementById("preloader");
+     window.addEventListener("load", function () {
+       loader.style.display = "none";
+     })
+  </script>
+
+  <footer>
+
+  </footer>
+
+</body>
+
+</html>
